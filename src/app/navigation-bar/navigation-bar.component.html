@@ -1,0 +1,20 @@
+<div class="navbar">
+    <div class="navbar-logo-block">
+        <i class="far fa-bars"></i>
+        <p id="logo-site">CuisineAZ</p>
+    </div>
+    <div class="navbar-menu-list">
+        <a *ngFor="let item of links">{{item}}</a>
+    </div>
+    <div class="navbar-session-block">
+        <p>Sign up</p>
+        <button (click)="displayAddRecipe=true">Sign in</button>
+    </div>
+    <app-modal [isDisplayed]="displayAddRecipe" (closeModalEvent)="closeAddRecipe()">
+        <div class="sign-in-form">
+            <input type="text" placeholder="E-mail, username...">
+            <input type="password" placeholder="Enter password here">
+            <button type="submit">Enter</button>
+        </div>
+    </app-modal>
+</div>

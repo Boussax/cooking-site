@@ -1,0 +1,27 @@
+<div id="cook-badge">
+    <img src="../../assets/images/question_mark.png" />
+    <h2>
+        Name :
+        <input
+            type="text"
+            placeholder="Recipe name here..."
+            [(ngModel)]="newRecipeName"
+        />
+    </h2>
+    <p>
+        Description :
+        <input
+            type="text"
+            placeholder="Recipe description here..."
+            [(ngModel)]="newRecipeDescription"
+        />
+    </p>
+    <div class="star-line">
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+    <button (click)="createRecipe()">Let's go!</button>
+</div>

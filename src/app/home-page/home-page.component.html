@@ -1,0 +1,31 @@
+<div class="home-page">
+    <div class="search-bar-main">
+        <div class="rectangle-shadow"></div>
+        <h2 id="dark-background">
+            Recherchez une recette par thème ou ingrédient
+        </h2>
+        <input
+            type="text"
+            class="search-block search-bar"
+            placeholder="ex: panais, plats au four, recettes rapides pour grandes tablées...                "
+        />
+        <button class="search-block search-button" (click)="resetInput()">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+    <div>
+        <h2>Inspirations recettes, bonjour!</h2>
+        <p>
+            Toujours plus d'inspiration en cuisine grâce à nos recettes faciles,
+            rapides et tendances.
+        </p>
+        <div class="cook-dashboard">
+            <app-cook-list
+                class="cook-badge"
+                *ngFor="let item of cookList"
+                [cook]="item"
+            ></app-cook-list>
+            <app-new-recipe-form class="cook-badge"></app-new-recipe-form>
+        </div>
+    </div>
+</div>

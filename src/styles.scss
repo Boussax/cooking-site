@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    left: 0;
+    right: 0;
+}
+body {
+    --primary-color: rgb(79, 79, 172);
+    --secondary-color: rgb(253, 148, 86);
+}
+
+i{
+    font-family:  "Font Awesome 5 Free"; font-weight: 900; font-size: xx-large;
+}
+
+.flex-center,
+.flex-column {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+button{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 4em;
+}

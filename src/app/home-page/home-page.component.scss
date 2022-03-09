@@ -1,0 +1,81 @@
+.home-page {
+    background-color: yellow;
+    position: relative;
+    display: block;
+    width: 100vw;
+    margin: 0;
+    left: 0;
+    top:25px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.home-page h2,p {
+    color: black;
+    text-align: center;
+}
+
+.search-bar-main{
+    background-image: url("../../assets/images/inspiration-voyage.jpg");
+    width: 100vw;
+    height: 60vh;
+    background-size: cover;
+    padding-top: 20px;
+}
+
+.search-bar{
+    position: relative;
+    height: 80px;
+    width: 500px;
+    left: calc((100vw - 500px - 50px)/2);
+    border-radius: 4em;
+    text-align: center;
+}
+
+.search-button{
+    position: absolute;
+    width: 56px;
+    height: 54px;
+    right: calc((100vw - 430px)/2);
+    top: 102px;
+}
+
+.cook-dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+    width: 80%;
+    background-color: inherit;
+}
+
+.cook-badge {
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px;
+}
+
+.cook-badge:hover {
+    background-color: darken($color: rgba(170, 170, 170, 0.26), $amount: 0.01);
+}
+
+.search-bar-container{
+    position: relative;
+    width: 100vw;
+}
+
+.rectangle-shadow{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    z-index: 0;
+}
+
+#dark-background{
+    color: white;
+    z-index: 1000;
+}

@@ -1,0 +1,7 @@
+<img [src]="cook?.imageURL">
+<h2>{{cook?.name}}</h2>
+<p>{{cook?.description}}</p>
+<div class="star-line">
+    <i *ngFor="let item of stars" [class]="item==1?'fas fa-star':'far fa-star'"></i>
+    <span>{{cook?.rating}}</span>
+</div>

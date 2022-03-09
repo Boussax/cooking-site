@@ -1,0 +1,47 @@
+i{
+    font-family:  "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+#logo-site{
+    font-family: cazicon;
+}
+
+.navbar {
+  position: absolute;
+  width: 100vw;
+  background-color: var(--secondary-color);
+  color: black;
+  padding: 10px 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  z-index: 100;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: nowrap;
+  cursor: pointer;
+}
+
+.navbar-logo-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.navbar-menu-list{
+    background-color: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-items: flex-startx  ;
+}
+
+.navbar-session-block {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
